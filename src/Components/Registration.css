@@ -1,0 +1,109 @@
+/* General container styles */
+.registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #cce7ff, #ffffff); /* Bluish-whitish gradient */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Form styles */
+.registration-form {
+  background: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.registration-form h2 {
+  color: #004080; /* Dark bluish color */
+  margin-bottom: 0.5rem;
+}
+
+.registration-form p {
+  color: #607d8b;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* Input and select styles */
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  color: #004080;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #b0c4de; /* Light bluish border */
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  background: #f9fbff; /* Light bluish background */
+  color: #333333;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #80bfff; /* Highlighted border */
+  box-shadow: 0 0 4px rgba(0, 128, 255, 0.5);
+}
+
+/* Button styles */
+.submit-button {
+  width: 100%;
+  padding: 0.8rem;
+  background: #0073e6; /* Vibrant blue color */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #005bb5; /* Darker blue for hover effect */
+}
+
+/* Error and success message styles */
+.error-message {
+  color: #d32f2f; /* Red for errors */
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.success-message {
+  color: #388e3c; /* Green for success */
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Login link styles */
+.login-link {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #004080;
+}
+
+.login-link a {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

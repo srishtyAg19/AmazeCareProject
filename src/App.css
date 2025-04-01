@@ -1,0 +1,707 @@
+/* AmazeCare - App.css */
+
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #2c3e50, #e2e2e2 40%, #2c3e50); /* Multi-step diagonal gradient */
+  color: #333333;
+  line-height: 1.6;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px; /* Increased padding to prevent content touching edges */
+  box-sizing: border-box;
+}
+
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+/* Header Section */
+.minimal-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  border-bottom: 1px solid #eeeeee;
+  background-color: #e2e2e2; /* Keep header white for contrast */
+  box-sizing: border-box;
+}
+
+.minimal-header .logo h1 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #2c3e50;
+  letter-spacing: 0.5px;
+  font-family: 'Helvetica', serif;
+}
+
+.minimal-header .menu {
+  display: flex;
+  gap: 15px;
+}
+
+
+.minimal-header .menu b {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+  padding: 8px 16px;
+  border: 1px solid #e2e2e2;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.minimal-header .menu a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+  padding: 8px 16px;
+  border: 1px solid #2c3e50;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+
+
+.minimal-header .menu a:hover {
+  background-color: #2c3e50;
+  color: #ffffff;
+}
+
+.minimal-header .menu .profile-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #2c3e50;
+  color: #ffffff;
+  border-radius: 50%; /* Circular shape */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.minimal-header .menu .profile-button:hover {
+  background-color: #1b5e20;
+}
+
+/* Tagline Section */
+.tagline-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Maintain equal grid for text and image */
+  align-items: center;
+  gap: 40px;
+  padding: 150px 40px 60px 40px; /* Position tagline and text lower */
+  background-color: #e2e2e2; /* Match body background */
+  box-sizing: border-box;
+}
+
+.tagline-section .tagline-text {
+  max-width: 700px;
+  text-align: left;
+}
+
+.tagline-section h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.tagline-section p {
+  font-size: 1.2rem;
+  color: #555555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.tagline-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 100px; /* Shift the image to the right */
+}
+
+/* Call-to-Action Section */
+.action-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px 0; /* Adjusted to match full-width layout */
+  background-color: #e2e2e2; /* Match body background */
+  border-top: 1px solid #eeeeee;
+  width: 100%; /* Full width for the section */
+  box-sizing: border-box;
+}
+
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  overflow: visible;
+  width: 90%; /* Adjusted for full width */
+}
+
+.action-item {
+  flex: 1;
+  max-width: 23%; /* Ensure 4 items fit within the visible area */
+  padding: 15px;
+  background-color: #e2e2e2;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.action-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-btn {
+  background-color:#e2e2e2 ;
+  color: #2c3e50;
+  border: none;
+  padding: 10px;
+  font-size: 2.0rem;
+  border-radius: 50%; /* Circular shape */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background-color: #2c3e50;
+  color:#e2e2e2
+}
+
+.action-section h3 {
+  font-size: 1.2rem; /* Adjusted font size for smaller boxes */
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.home-footer {
+  width: 100%; /* Ensure footer covers the full width */
+  text-align: center;
+  padding: 20px 40px; /* Increased padding to prevent content touching edges */
+  background-color: #2c3e50;
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+
+.home-footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.home-footer a:hover {
+  color: #b2dfdb;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 250px 1fr; /* Sidebar and Main Content */
+  grid-template-rows: auto 1fr; /* Header and Content */
+  min-height: 100vh;
+}
+
+/* Header */
+.dashboard-header {
+  grid-column: 1 / -1; /* Span full width */
+  background-color: #2c3e50;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 150px;
+}
+
+.dashboard-header .dashboard-logo h1 {
+  font-size: 1.5rem;
+}
+
+.dashboard-header .dashboard-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.dashboard-header .dashboard-menu a:hover {
+  color: #80cbc4;
+}
+
+/* Sidebar */
+.dashboard-sidebar {
+  background-color: #e2e2e2;
+  padding: 20px;
+}
+
+.dashboard-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-sidebar li {
+  margin-bottom: 15px;
+}
+
+.dashboard-sidebar a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.dashboard-sidebar a:hover {
+  color: #4caf50;
+}
+
+/* Main Content */
+.dashboard-main {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.welcome-section {
+  margin-bottom: 20px;
+}
+
+.welcome-section h2 {
+  color: #2c3e50;
+}
+
+.quick-actions {
+  margin-bottom: 20px;
+}
+
+.quick-actions h3 {
+  margin-bottom: 15px;
+}
+
+.action-cards {
+  display: flex;
+  gap: 15px;
+}
+
+.action-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+}
+
+.action-card h4 {
+  margin-bottom: 10px;
+}
+
+.action-card button {
+  background-color: #2c3e50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-card button:hover {
+  background-color: #1b5e20;
+}
+
+/* Notifications */
+.notifications-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.notifications-section li {
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal Container */
+.modal {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px; /* Equal padding on all sides */
+  width: 400px; /* Fixed width */
+  max-width: 90%; /* Responsive on smaller screens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Title */
+.modal-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Form Styles */
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Space between form elements */
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Input Fields */
+.form-input {
+  padding: 10px; /* Equal padding inside input fields */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Error Messages */
+.form-error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: -0.5rem;
+}
+
+/* Action Buttons */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px; /* Equal padding inside buttons */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  padding: 10px 15px; /* Equal padding inside buttons */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Status Message */
+.status-message {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #28a745; /* Green color for success */
+}
+/* General List Container */
+.list-container {
+  background-color: #ffffff; /* White background for contrast */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Equal padding */
+  margin-bottom: 20px; /* Spacing between sections */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Table Styling */
+.list-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border-radius: 8px; /* Rounded edges */
+  overflow: hidden; /* Ensure roundness is visible */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.list-table th,
+.list-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.list-table th {
+  background-color: #2c3e50; /* Dark header */
+  color: #ffffff; /* White text */
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.list-table tr:hover {
+  background-color: #f9f9f9; /* Light background on hover */
+}
+
+.list-table td {
+  color: #333333; /* Neutral text color */
+}
+
+/* Action Buttons */
+.list-actions {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.list-actions button {
+  padding: 8px 12px; /* Button padding */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.list-actions .btn-update {
+  background-color: #007bff; /* Primary blue */
+  color: white;
+}
+
+.list-actions .btn-update:hover {
+  background-color: #0056b3;
+}
+
+.list-actions .btn-delete {
+  background-color: #dc3545; /* Danger red */
+  color: white;
+}
+
+.list-actions .btn-delete:hover {
+  background-color: #c82333;
+}
+
+/* Empty State */
+.list-empty {
+  text-align: center;
+  color: #555555; /* Neutral gray */
+  margin: 20px 0;
+  font-size: 1.1rem;
+}
+
+/* Edit Profile Styling */
+.edit-profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2c3e50, #e2e2e2 40%, #2c3e50);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.edit-profile-form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+}
+
+.edit-profile-form h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #2c3e50;
+}
+
+.form-error {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2c3e50;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #1a252f;
+}
+
+.message {
+  text-align: center;
+  font-size: 14px;
+  color: #2c3e50;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .edit-profile-form {
+    padding: 20px;
+  }
+
+  .edit-profile-form h2 {
+    font-size: 20px;
+  }
+}
+
+/* Sidebar Buttons */
+.sidebar-button {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  margin: 5px 0;
+  text-align: left;
+  background-color: #e2e2e2; 
+  border: none; 
+  border-radius: 5px;
+  font-size: 1rem; 
+  font-weight: 600; 
+  color: #2c3e50; 
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar-button:hover {
+  background-color: #2c3e50; 
+  color: #e2e2e2; 
+  transform: translateY(-2px);
+}
+
+/* Logout Button */
+.logout-button {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 10px 0;
+  background-color: #e2e2e2; 
+  border: none; 
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #2c3e50;
+  color: #f8f9fa; 
+  transform: translateY(-2px); 
+}
+
+/* Quick Actions Buttons */
+.quick-action-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #f8f9fa; 
+  color: #2c3e50; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quick-action-button:hover {
+  background-color: #2c3e50; 
+  color: #f8f9fa; 
+  transform: translateY(-2px); 
+}
+
+
